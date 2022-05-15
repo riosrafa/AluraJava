@@ -7,6 +7,7 @@ public class ControleBonificacao {
     public void registra(Funcionario f){
         double bonificacao = f.getBonificacao();
         this.soma = this.soma + bonificacao;
+        System.out.println("Valor da bonificacao: " + this.soma);
     }
 
     public double getSoma(){

@@ -1,9 +1,6 @@
 package br.com.alura.app;
 
-import br.com.alura.dao.ControleBonificacao;
-import br.com.alura.dao.EditorVideo;
-import br.com.alura.dao.Funcionario;
-import br.com.alura.dao.Gerente;
+import br.com.alura.dao.*;
 
 public class App {
     public static void main(String[] args) {
@@ -39,9 +36,14 @@ public class App {
         EditorVideo editorVideo = new EditorVideo();
         editorVideo.setSalario(7000);
 
-        ControleBonificacao cb = new ControleBonificacao();
-        cb.registra();
+        Designer designer = new Designer();
+        designer.setSalario(5000);
 
+
+        ControleBonificacao cb = new ControleBonificacao();
+        cb.registra(editorVideo);
+        cb.registra(funcionario);
+        cb.registra(designer);
 
     }
 }
