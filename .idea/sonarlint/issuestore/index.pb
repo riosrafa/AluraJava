@@ -9,5 +9,5 @@ Y
 )src/br/com/alura/app/TesteReferencia.java,8\3\835a577e76d7d7f947305b844a2e2e043e55702f
 Q
 !src/br/com/alura/oo/ByteBank.java,6\e\6e8a438a4059679bef04f2a38b9a3b8c5bac383f
-^
-.JavaHerdado/src/br/com/alura/package-info.java,a\6\a6111b2c3a8d2d67f00c9da7b3f7cc0d89d6b25a
+[
++JavaPoli/src/br/com/alura/dao/Designer.java,2\3\2305723caa3a794736fb454aa59b0b478de6b53f
