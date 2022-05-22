@@ -1,6 +1,7 @@
 package br.com.alura.dao;
-
-public class Funcionario {
+/*
+* Não pode instanciar um objeto dessa classe...*/
+public abstract class Funcionario {
 
     private String nome;
     private String cpf;
@@ -14,10 +15,10 @@ public class Funcionario {
         this.cpf = cpf;
         this.salario = salario;
     }
+/*
+* Não pode ter corpo no metodo, sendo a classe filha responsavel pela implementação do metodo*/
+    public abstract double getBonificacao();
 
-    public double getBonificacao(){
-        return this.salario * 0.1;
-    }
     public String getNome() {
         return nome;
     }

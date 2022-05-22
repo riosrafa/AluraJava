@@ -12,6 +12,17 @@ public class ContaCorrente extends Conta{
     }
 
     @Override
+    public void deposita(double valor) {
+        super.saldo += valor;
+    }
+
+    @Override
+    public void deposita(double valor, Conta c) {
+        this.saldo = this.saldo + valor;
+        System.out.println("Valor do deposito: " + this.saldo + "Tipo de conta: " + c.toString());
+    }
+
+    @Override
     public boolean saca(double valor) {
         double valorJuros = valor + 0.10;
         return super.saca(valorJuros);

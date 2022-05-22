@@ -5,7 +5,7 @@ import br.com.alura.dao.*;
 public class App {
     public static void main(String[] args) {
 
-        Funcionario funcionario = new Funcionario();
+        Gerente funcionario = new Gerente();
 
         funcionario.setSalario(5000);
         System.out.println(funcionario.getBonificacao());

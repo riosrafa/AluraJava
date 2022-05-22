@@ -2,9 +2,9 @@ package br.com.alura.app;
 
 import br.com.alura.model.Cliente;
 
-public class Conta {
+public abstract class Conta {
 
-    private double saldo;
+    protected double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
@@ -13,6 +13,7 @@ public class Conta {
     public Conta(){
 
     }
+
     public Conta(int agencia, int numero){
         Conta.total++;
         System.out.println("O total de contas é " + Conta.total);
@@ -22,14 +23,10 @@ public class Conta {
         System.out.println("Estou criando uma conta " + this.numero);
     }
 
-    public void deposita(double valor) {
-        this.saldo = this.saldo + valor;
-        System.out.println("Valor do deposito: " + this.saldo);
-    }
-    public void deposita(double valor, Conta c) {
-        this.saldo = this.saldo + valor;
-        System.out.println("Valor do deposito: " + this.saldo + "Tipo de conta: " + c.toString());
-    }
+    public abstract void deposita(double valor);
+
+    public abstract void deposita(double valor, Conta c);
+
     public boolean saca(double valor) {
         if(this.saldo >= valor) {
             this.saldo -= valor;
