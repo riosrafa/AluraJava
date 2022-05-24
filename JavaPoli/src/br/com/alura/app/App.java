@@ -23,7 +23,7 @@ public class App {
         System.out.println("######################");
 
         /*Invocando metodos da classe filha(Gerente) */
-        gerente.setSenha(777);
+        gerente.setSenha(222);
         /*Metodo boolean para tratar o retorno da informação*/
         boolean autentica = gerente.autentica(777);
         System.out.println(autentica);
@@ -44,6 +44,9 @@ public class App {
         cb.registra(editorVideo);
         cb.registra(funcionario);
         cb.registra(designer);
+
+        SistemaInterno si = new SistemaInterno();
+        si.autentica(gerente);
 
     }
 }
