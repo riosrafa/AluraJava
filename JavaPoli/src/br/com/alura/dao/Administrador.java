@@ -1,8 +1,14 @@
 package br.com.alura.dao;
 
-public class Administrador extends Funcionario {
+public class Administrador extends Funcionario implements Autenticavel {
 
-    private int senha;
+   // private int senha;
+    private AutenticaUtil util;
+
+    public Administrador() {
+        AutenticaUtil util = new AutenticaUtil();
+        this.util = new AutenticaUtil();
+    }
 
     @Override
     public double getBonificacao() {
@@ -11,7 +17,12 @@ public class Administrador extends Funcionario {
         return 350;
     }
     public void setSenha(int senha){
-        this.senha = senha;
+        this.util.setSenha(senha);
+    }
+
+    @Override
+    public boolean autentica(int senha) {
+        return this.util.autentica(senha);
     }
 
 }

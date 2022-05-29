@@ -5,6 +5,7 @@ import br.com.alura.dao.*;
 public class App {
     public static void main(String[] args) {
 
+        Autenticavel referencia = new Gerente();
         Gerente funcionario = new Gerente();
 
         funcionario.setSalario(5000);

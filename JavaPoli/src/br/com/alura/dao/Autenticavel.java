@@ -1,6 +1,6 @@
 package br.com.alura.dao;
 
-public abstract interface Auntenticavel {
+public abstract interface Autenticavel {
 
 /*
 * contrato auntenticavel
@@ -8,5 +8,5 @@ public abstract interface Auntenticavel {
 *       metodo s*/
 
     public void setSenha(int senha);
-    public abstract  boolean auntentica(int senha);
+    public abstract  boolean autentica(int senha);
 }
