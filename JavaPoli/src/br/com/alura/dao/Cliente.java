@@ -15,6 +15,7 @@ public class Cliente  implements Autenticavel {
 
     @Override
     public boolean autentica(int senha) {
+        /*Delegamos a chamada do metodo na classe util*/
         boolean response = this.util.autentica(senha);
         return response;
     }
