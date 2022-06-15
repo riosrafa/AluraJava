@@ -1,8 +1,9 @@
 package br.com.alura.app;
 
 import br.com.alura.model.Cliente;
+import br.com.alura.model.Tributavel;
 
-public class ContaCorrente extends Conta{
+public class ContaCorrente extends Conta implements Tributavel {
 
     public ContaCorrente() {
     }
@@ -26,5 +27,13 @@ public class ContaCorrente extends Conta{
     public boolean saca(double valor) {
         double valorJuros = valor + 0.10;
         return super.saca(valorJuros);
+    }
+
+    /**
+     * @return
+     */
+    @Override
+    public double getValorImposto() {
+        return super.saldo * 0.10;
     }
 }
