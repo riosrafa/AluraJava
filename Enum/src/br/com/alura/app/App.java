@@ -1,13 +1,16 @@
 package br.com.alura.app;
 
+import br.com.alura.enums.Prioridade;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Valor Passado na thread: " + Thread.MAX_PRIORITY);
+        /*Lembrando que a variavel, podemos navegar no objeto atráves do (.) */
+        Prioridade pMin = Prioridade.MIN;
+        Prioridade pNormal = Prioridade.NORMAL;
+        Prioridade pMax = Prioridade.MAX;
 
-        Thread t = new Thread(() -> System.out.println("Roda roda jequiti: "));
+        System.out.println(pMin.name());
+        System.out.println(pMin.getValor());
 
-        t.setPriority(Thread.MAX_PRIORITY);
-
-        t.start();
     }
 }
