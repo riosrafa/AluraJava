@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Enum/Enum.iml" filepath="$PROJECT_DIR$/Enum/Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExececoesJava/ExececoesJava.iml" filepath="$PROJECT_DIR$/ExececoesJava/ExececoesJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaPoli/JavaHerdado.iml" filepath="$PROJECT_DIR$/JavaPoli/JavaHerdado.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaHerdado1/JavaHerdado1.iml" filepath="$PROJECT_DIR$/JavaHerdado1/JavaHerdado1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/OO.iml" filepath="$PROJECT_DIR$/.idea/OO.iml" />
