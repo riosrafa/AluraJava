@@ -1,6 +1,6 @@
 package br.com.alura.app;
 
-public class Fluxo {
+public class FluxoExecessoes {
 
     /*
     * @rafael maia: Os métodos static ou métodos da classe são funções que não
@@ -21,24 +21,18 @@ public class Fluxo {
 
     private static void metodo1() {
         System.out.println("Ini do metodo1");
-  //      metodo2();
-        metodo22();
+        metodo2();
         System.out.println("Fim do metodo1");
     }
-/*
+
     private static void metodo2() {
         System.out.println("Ini do metodo2");
         for(int i = 1; i <= 5; i++) {
             System.out.println(i);
                 int a = i /0;
-                Fluxo app = null;
+                FluxoExecessoes app = null;
                 app.equals(1);
         }
         System.out.println("Fim do metodo2");
-    }*/
-    private static void metodo22(){
-        System.out.println("Metodo 22");
-        ArithmeticException ex = new ArithmeticException();
-        throw ex;
     }
 }
