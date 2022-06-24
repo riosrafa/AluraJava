@@ -13,14 +13,19 @@ public class Fluxo {
         try{
             metodo1();
         }catch (ArithmeticException e){
-            System.out.println(e);
+            e.printStackTrace();
+            //System.out.println(e);
+        }catch (NullPointerException e){
+            String msg = e.getMessage();
+            System.out.println("NullPoninterExcepetion");
+            e.printStackTrace();
         }
-            System.out.println("Fim do main");
+        System.out.println("Fim do main");
     }
 
     private static void metodo1() {
         System.out.println("Ini do metodo1");
-            metodo2();
+        metodo2();
         System.out.println("Fim do metodo1");
     }
 
@@ -29,6 +34,8 @@ public class Fluxo {
         for(int i = 1; i <= 5; i++) {
             System.out.println(i);
                 int a = i /0;
+                Fluxo app = null;
+                app.equals(1);
         }
         System.out.println("Fim do metodo2");
     }
