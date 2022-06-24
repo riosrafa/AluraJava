@@ -38,7 +38,7 @@ public class Fluxo {
     }*/
     private static void metodo22(){
         System.out.println("Metodo 22");
-        ArithmeticException ex = new ArithmeticException();
-        throw ex;
+        throw new ArithmeticException();
+
     }
 }
