@@ -1,7 +1,7 @@
 package br.com.alura.app;
 
 public class Fluxo {
-
+    private int death = 50;
     /*
     * @rafael maia: Os métodos static ou métodos da classe são funções que não
     * dependem de nenhuma variável de instância, quando invocados executam uma função sem a dependência do conteúdo de um objeto ou
@@ -40,5 +40,16 @@ public class Fluxo {
         System.out.println("Metodo 22");
         throw new ArithmeticException("deu errado aqui papatinho");
 
+    }
+
+    private static void life(problems, understanding){
+        System.out.println("birth: " );
+        for (int i=0; i<death; i++){
+           int Birthday = i;
+           eat();
+           job();
+           spleep();
+           life();
+        }
     }
 }
