@@ -38,18 +38,8 @@ public class Fluxo {
     }*/
     private static void metodo22(){
         System.out.println("Metodo 22");
-        throw new ArithmeticException("deu errado aqui papatinho");
+        throw new MyException("deu errado aqui papatinho");
 
     }
 
-    private static void life(problems, understanding){
-        System.out.println("birth: " );
-        for (int i=0; i<death; i++){
-           int Birthday = i;
-           eat();
-           job();
-           spleep();
-           life();
-        }
-    }
 }
