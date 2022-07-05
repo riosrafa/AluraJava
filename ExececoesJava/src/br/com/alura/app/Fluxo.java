@@ -19,7 +19,7 @@ public class Fluxo {
         System.out.println("Fim do main");
     }
 
-    private static void metodo1() {
+    private static void metodo1() throws MyException {
         System.out.println("Ini do metodo1");
   //      metodo2();
         metodo22();
@@ -36,7 +36,7 @@ public class Fluxo {
         }
         System.out.println("Fim do metodo2");
     }*/
-    private static void metodo22(){
+    private static void metodo22() throws MyException{
         System.out.println("Metodo 22");
         throw new MyException("deu errado aqui papatinho");
 

@@ -1,6 +1,6 @@
 package br.com.alura.app;
 
-public class MyException extends RuntimeException{
+public class MyException extends Exception{
 
     public MyException(){
         super();
