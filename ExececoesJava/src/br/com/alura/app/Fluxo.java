@@ -12,7 +12,7 @@ public class Fluxo {
         System.out.println("Ini do main");
         try{
             metodo1();
-        }catch ( MyException| ArithmeticException | NullPointerException e){
+        }catch ( MyException | ArithmeticException | NullPointerException e){
             e.printStackTrace();
             //System.out.println(e);
         }
