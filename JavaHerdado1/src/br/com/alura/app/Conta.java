@@ -27,12 +27,11 @@ public abstract class Conta {
 
     public abstract void deposita(double valor, Conta c);
 
-    public boolean saca(double valor) {
-        if(this.saldo >= valor) {
-            this.saldo -= valor;
-            return true;
-        } else {
-            return false;
+    public void saca(double valor) {
+
+        if(this.saldo < valor) {
+            ///problemaaaaa
+            throw new MyException("Valor: " + valor);
         }
     }
 
